@@ -1,0 +1,24 @@
+package com.tnsif.nonaccessmodifier;
+public class FinalDemo {
+		final int Max = 100;
+		
+		 void display() {
+			System.out.println("Show the value of max:  "+Max);
+		}
+
+		public static void main(String[] args) {
+			FinalDemo fd = new FinalDemo();
+		//	fd.Max = 300;
+			fd.display();
+			
+			
+		}
+}
+
+class Child extends FinalDemo{
+	
+      void display() {
+		System.out.println("Show the value of max:  "+Max);
+	}
+}
+
